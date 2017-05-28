@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор ответов для финансового директора</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="fin-problems">
+
+    <h2 class="fin-problems__header">
+    </h2>
+
+    <div class="fin-problems__header-note">
+        Чтобы понять, есть ли в финансовой службе проблемы, ответьте на пять вопросов.
+    </div>
+
+    <form class="fin-problems__form" id="fin-problems__form">
+
+        <div class="fin-problems__row">
+
+            <p class="fin-problems__question">
+                <b>Вопрос 1</b>
+                <br />
+                Были ли в вашей компании за последние 12 месяцев кассовые разрывы?
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer1"
+                       id="fin-problems__answer1-1"
+                       value="1" />
+                <label for="fin-problems__answer1-1" class="fin-problems__label">Да</label>
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer1"
+                       id="fin-problems__answer1-2"
+                       value="0" />
+                <label for="fin-problems__answer1-2" class="fin-problems__label">Нет</label>
+            </p>
+
+        </div>
+
+        <div class="fin-problems__row">
+
+            <p class="fin-problems__question">
+                <b>Вопрос 2.</b>
+                <br/>
+                В бюджете, есть статьи, по которым план-факт отклонение 10 и более процентов?
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer2"
+                       id="fin-problems__answer2-1"
+                       value="1" />
+                <label for="fin-problems__answer2-1" class="fin-problems__label">Да</label>
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer2"
+                       id="fin-problems__answer2-2"
+                       value="0"/>
+                <label for="fin-problems__answer2-2" class="fin-problems__label">Нет</label>
+            </p>
+
+        </div>
+
+        <div class="fin-problems__row">
+
+            <p class="fin-problems__question">
+                <b>Вопрос 3.</b>
+                <br/>
+                Финансовая служба объяснила причины всех значимых отклонений от бюджета?
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer3"
+                       id="fin-problems__answer3-1"
+                       value="1" />
+                <label for="fin-problems__answer3-1" class="fin-problems__label">Да</label>
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer3"
+                       id="fin-problems__answer3-2"
+                       value="0" />
+                <label for="fin-problems__answer3-2" class="fin-problems__label">Нет</label>
+            </p>
+
+        </div>
+
+        <div class="fin-problems__row">
+
+            <p class="fin-problems__question">
+                <b>Вопрос 4.</b>
+                <br/>
+                В бюджете 2017 статья «Прочие расходы» весит более 5 процентов всех расходов?
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer4"
+                       id="fin-problems__answer4-1"
+                       value="1" />
+                <label for="fin-problems__answer4-1" class="fin-problems__label">Да</label>
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer4"
+                       id="fin-problems__answer4-2"
+                       value="0" />
+                <label for="fin-problems__answer4-2" class="fin-problems__label">Нет</label>
+            </p>
+
+        </div>
+
+        <div class="fin-problems__row">
+
+            <p class="fin-problems__question">
+                <b>Вопрос 5.</b>
+                <br/>
+                Пени и штрафы за последние 12 месяцев превысили три процента от годового оборота?
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer5"
+                       id="fin-problems__answer5-1"
+                       value="1" />
+                <label for="fin-problems__answer5-1" class="fin-problems__label">Да</label>
+            </p>
+
+            <p class="fin-problems__answer">
+                <input class="fin-problems__radio"
+                       type="radio"
+                       name="answer5"
+                       id="fin-problems__answer5-2"
+                       value="0" />
+                <label for="fin-problems__answer5-2" class="fin-problems__label">Нет</label>
+            </p>
+
+        </div>
+
+        <div class="fin-problems__row fin-problems__result">
+
+            <div class="fin-problems__result-note">
+                <div id="result-phrase" class="fin-problems__result-phrase">
+                    <p class="note-title good">
+                        В финансовой службе нет явных проблем. Как повысить эффективность ее работы читайте ниже.
+                    </p>
+                    <p class="note-title bad">
+                        В работе финансовой службы есть слабые места, как их устранить читайте ниже.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </form>
+
+
+</div>
+</body>
+</html>
