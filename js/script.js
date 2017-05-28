@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
     var $form = $("#fin-problems__form"),
@@ -7,8 +5,6 @@ $(document).ready(function () {
         $result = $(".fin-problems__result", $form),
         $resultTitle = $("#result-phrase", $result),
         result = 0;
-
-
 
 
     function animateHideShow(hideObj, showObj) {
@@ -73,7 +69,6 @@ $(document).ready(function () {
         $resultTitle.toggleClass("hasProblems", !!result);
 
     }
-
 
 
     animateHideShow(null, $rows.eq(0));

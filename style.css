@@ -56,7 +56,7 @@
 }
 
 .fin-problems .fin-problems__label {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 30px;
     cursor: pointer;
     width: 611px;
     display: block;
@@ -64,6 +64,20 @@
 }
 
 
+.fin-problems .fin-problems__label:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMUlEQVQ4T2NkYGD4D8RkA0aqGfD/P2kOYWQE2c3AAHfBqAHAuBwNxOEQBuRmR4pzIwCWAjQBw+gPWAAAAABJRU5ErkJggg==") no-repeat;
+}
+
+.fin-problems .fin-problems__radio:checked + .fin-problems__label:before{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAb0lEQVQ4T2O80ML/n4ECwEg1A/SrP5DkjoutAmD1cBcMHQNATge5liwvwDSRZQCyZlDgYXUBzHno0YGuGa8BIEnkGMGmGacByBLI/sQWxXgDESaJ7hpkrxGMBVzhATOEoAGE0jWGAYQ04JKnODcCAIhkazE1sQboAAAAAElFTkSuQmCC") no-repeat;
+}
 
 .fin-problems .fin-problems__radio:checked + .fin-problems__label,
 .fin-problems .fin-problems__label:hover {
